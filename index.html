@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form action="" class="imc-form" onsubmit="calculateIMC(event)">
+        <h2>Calculadora de IMC</h2>
+        <div class="row">
+            <div class="row-type-column">
+                <div class="text-form">
+                    <label for="">
+                        <input type="text" id="name" autocomplete="off" placeholder="." autofocus required>
+                        <span>Nome...</span>
+                    </label>
+                </div>
+                <div class="text-form">
+                    <label for="">
+                        <input type="text" id="weight" autocomplete="off" placeholder="." required>
+                        <span>Peso...</span>
+                    </label>
+                </div>
+                <div class="text-form">
+                    <label for="">
+                        <input type="text" id="height" autocomplete="off" placeholder="." required>
+                        <span>Altura...</span>
+                    </label>
+                </div>
+                <button class="btn-submit" type="submit">Calcular IMC</button>
+            </div>
+            <div class="right-form">
+                <h3>Resultado:</h3>
+                <div id="imc-result">
+
+                </div>
+            </div>
+        </div>
+    </form>
+
+</body>
+
+</html>
